@@ -1,6 +1,7 @@
 package br.com.rosa.projeto.dto;
 
 import br.com.rosa.projeto.entity.UsuarioEntity;
+
 import org.springframework.beans.BeanUtils;
 
 public class UsuarioDTO {
