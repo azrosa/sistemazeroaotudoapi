@@ -1,0 +1,2 @@
+INSERT INTO RS_USUARIO(ID, NOME, LOGIN, SENHA, EMAIL) VALUES (1, 'Alan', 'alan', '13579', 'alan@gmail.com');
+INSERT INTO RS_PERFIL(ID, DESCRICAO) VALUES(1, 'Administrador');
