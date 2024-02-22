@@ -1,0 +1,62 @@
+INSERT INTO
+  RS_USUARIO (ID, NOME, LOGIN, SENHA, EMAIL, SITUACAO)
+VALUES
+  (
+    1,
+    'Alan',
+    'alan',
+    '12345',
+    'alan@gmail.com',
+    'ATIVO'
+  );
+
+INSERT INTO
+  RS_USUARIO (ID, NOME, LOGIN, SENHA, EMAIL, SITUACAO)
+VALUES
+  (
+    2,
+    'Vivian',
+    'vivian',
+    '13579',
+    'vivian@gmail.com',
+    'ATIVO'
+  );
+
+ALTER SEQUENCE RS_USUARIO_ID_SEQ
+RESTART WITH 3;
+
+INSERT INTO
+  RS_PERFIL (ID, DESCRICAO)
+VALUES
+  (1, 'Administrador');
+
+INSERT INTO
+  RS_PERFIL (ID, DESCRICAO)
+VALUES
+  (2, 'Gerente');
+
+INSERT INTO
+  RS_PERFIL (ID, DESCRICAO)
+VALUES
+  (3, 'Cliente');
+
+ALTER SEQUENCE RS_PERFIL_SEQ
+RESTART WITH 4;
+
+INSERT INTO
+  RS_RECURSO (ID, NOME, CHAVE)
+VALUES
+  (1, 'Tela Usuário', 'usuario');
+
+INSERT INTO
+  RS_RECURSO (ID, NOME, CHAVE)
+VALUES
+  (2, 'Tela Perfil', 'perfil');
+
+INSERT INTO
+  RS_RECURSO (ID, NOME, CHAVE)
+VALUES
+  (3, 'Tela Recurso', 'recurso');
+
+ALTER SEQUENCE RS_RECURSO_SEQ
+RESTART WITH 4;
